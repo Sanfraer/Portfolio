@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Обзор игровой индустрии</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .theme-toggle {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .game-container {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(226, 10, 10, 0.774);
+      color: #333; /* Черный цвет текста по умолчанию */
+    }
+
+    .game-icon {
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+    }
+
+    .game-details {
+      flex: 1;
+    }
+
+   
+    .light {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    
+    .dark {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+  <style>
+    .light {
+      color: #000; 
+    }
+
+    .dark {
+      color: #fff; 
+    }
+  </style>
+  <script>
+    function toggleTheme() {
+      var body = document.body;
+      body.classList.toggle("light");
+      body.classList.toggle("dark");
+
+      var reviewTitle = document.getElementById("review-title");
+      reviewTitle.classList.toggle("light");
+      reviewTitle.classList.toggle("dark");
+    }
+  </script>
+</head>
+<body class="light">
+  <h1 id="review-title" class="light">Обзор игровой индустрии</h1>
+
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">Переключить тему</button>
+  </div>
+
+  <div class="game-container">
+    <img src="https://i.playground.ru/p/8o4AzrLmNu_nkwEC3CraTQ.png" alt="CSGO Icon" class="game-icon">
+    <div class="game-details">
+      <h2>Counter-Strike: Global Offensive (CS:GO)</h2>
+      <p>
+        CS:GO - многопользовательская компьютерная игра, разработанная компанией Valve Corporation.
+        Игра написана на движке Source, который представляет собой сильно модифицированную версию движка GoldSrc,
+        разработанного еще в 1997 году для игры Half-Life. 
+        Гибкая система физики и анимации, позволяющая создавать реалистичные и интерактивные игровые миры.
+        Поддержка модификаций и создания пользовательского контента, что способствует активной разработке модов и карт сообществом игроков.
+        Инструменты для разработки многопользовательских игр и поддержка создания онлайн-серверов.
+        Оптимизированный движок, который позволяет достигать хорошей производительности даже на слабых системах.
+      </p>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <img src="data:image/jpeg;base64,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" alt="PUBG Icon" class="game-icon">
+    <div class="game-details">
+      <h2>PlayerUnknown's Battlegrounds (PUBG)</h2>
+      <p>
+        PUBG - онлайн-игра, разработанная и выпущенная компанией PUBG Corporation.
+        Игра использует собственный движок Unreal Engine 4, который обеспечивает красивую графику
+        и реалистичную физику.Визуальная качественная графика с поддержкой фотореалистичных эффектов и сцен.
+        Мощный инструментарий для разработки игр, включая редактор уровней, систему анимации, физики и визуального скриптинга.
+        Кроссплатформенность, что позволяет разрабатывать игры для разных платформ, включая ПК, консоли и мобильные устройства.
+        Поддержка виртуальной реальности (VR) и дополненной реальности (AR).
+      </p>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <img src="https://media.discordapp.net/attachments/1087747380872495245/1116096938127917137/Valorant_Logo.png?width=517&height=517" alt="VALORANT Icon" class="game-icon"> 
+    <div class="game-details">
+      <h2>Valorant</h2>
+      <p>
+        Valorant - командная тактическая игра, разработанная компанией Riot Games.
+        Она использует собственный движок Riot Vanguard, который обеспечивает точность и отзывчивость
+        игрового процесса.
+        Анти-читерская система, разработанная для борьбы с использованием нечестных программ и вмешательства в игровой процесс.
+        Запускается вместе с игрой и работает в фоновом режиме, обеспечивая постоянную защиту от подозрительных действий.
+        Мониторит систему на предмет наличия запрещенного программного обеспечения и вредоносных файлов.
+        Обладает высоким уровнем защиты и стремится обеспечить честную и справедливую игровую среду.
+      </p>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <img src="https://ontabs.com/uploads/images/1318/minecraft-pocket-edition-256.png" alt="Minecraft Icon" class="game-icon">
+    <div class="game-details">
+      <h2>Minecraft</h2>
+      <p>
+        Minecraft - популярная песочница, разработанная и выпущенная компанией Mojang Studios.
+        Она работает на собственном движке игры, известном как Bedrock Engine,
+        который обеспечивает уникальную визуальную стилистику и бесконечные возможности творчества.
+        россплатформенность, позволяющая играть на разных устройствах, включая ПК, консоли, мобильные устройства и виртуальную реальность.
+Возможность игры в многопользовательском режиме с поддержкой кросс-платформенного взаимодействия между игроками на разных устройствах.
+Гибкая система модификаций и создания пользовательского контента, позволяющая игрокам настраивать и расширять игровой мир.
+Простой интерфейс и интуитивный геймплей, делающие игру доступной для игроков разного возраста и уровня опыта.
+      </p>
+    </div>
+  </div>
+
+  <footer
+        <p> Все права защищены.&copy; 2023 Романов Александр ИСВ/1</p>
+    </footer>
+    
+</body>
+</html>
